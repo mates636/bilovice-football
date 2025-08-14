@@ -9,7 +9,7 @@
         <div>
           <div class="flex items-center justify-between">
             <h3 class="font-semibold">Mužský tým</h3>
-            <span class="inline-flex items-center rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">A-tým</span>
+            <!-- <span class="inline-flex items-center rounded-md bg-emerald-500/10 px-2 py-1 text-xs font-medium text-emerald-400 ring-1 ring-inset ring-emerald-500/20">A-tým</span> -->
           </div>
 
           <ul v-if="men?.length" class="mt-3 divide-y divide-white/10">
@@ -30,7 +30,7 @@
         <div>
           <div class="flex items-center justify-between">
             <h3 class="font-semibold">Dorost</h3>
-            <span class="inline-flex items-center rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-white/80 ring-1 ring-inset ring-white/10">U-18</span>
+            <!-- <span class="inline-flex items-center rounded-md bg-white/5 px-2 py-1 text-xs font-medium text-white/80 ring-1 ring-inset ring-white/10">U-18</span> -->
           </div>
 
           <ul v-if="youth?.length" class="mt-3 divide-y divide-white/10">

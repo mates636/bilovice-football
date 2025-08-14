@@ -26,19 +26,19 @@ import RecentMatchesCard from '@/components/RecentMatchesCard.vue'
 
 
 const upcomingMen = [
-  { date: 'So 24. srp', time: '15:00', opponent: 'FK Riverton', venue: 'Domácí stadion' },
-  { date: 'Ne 1. zář', time: '17:30', opponent: 'TJ Southbridge', venue: 'Southbridge Arena' }
+  { date: 'Ne 17. srp', time: '16:30', opponent: 'Svratka', venue: 'Domácí hřiště' },
+  { date: 'Út 19. srp', time: '17:00', opponent: 'Řečkovice', venue: 'Novoměstská' }
 ]
 const upcomingYouth = [
-  { date: 'So 24. srp', time: '11:00', opponent: 'U-18 Northfield', venue: 'Tréninkové centrum' }
+  { date: 'So 16. srp', time: '15:00', opponent: 'TATRAN Kohoutovice', venue: 'Domácí hřiště' }
 ]
 
 const recentMen = [
-  { date: 'Ne 18. srp', opponent: 'AC Lakeside', venue: 'Lakeside Park', result: '2–1' },
-  { date: 'So 10. srp', opponent: 'SK Meadow', venue: 'Domácí stadion', result: '0–0' }
+  // { date: 'Ne 18. srp', opponent: 'AC Lakeside', venue: 'Lakeside Park', result: '2–1' },
+  // { date: 'So 10. srp', opponent: 'SK Meadow', venue: 'Domácí stadion', result: '0–0' }
 ]
 const recentYouth = [
-  { date: 'So 17. srp', opponent: 'U-18 Eastwood', venue: 'Eastwood Field', result: '1–3' }
+  { date: 'Ne 10. srp', opponent: 'Rousínov/FDK', venue: 'Domácí hřiště', result: '2-0' }
 ]
 
 useHead({
