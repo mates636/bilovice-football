@@ -3,10 +3,10 @@
     <div class="section h-16 flex items-center justify-between">
       <!-- Brand -->
       <NuxtLink to="/" class="flex items-center gap-3">
-        <div class="size-9 rounded-lg bg-emerald-500/20 ring-1 ring-emerald-400/30 grid place-items-center">
+        <!-- <div class="size-9 rounded-lg bg-emerald-500/20 ring-1 ring-emerald-400/30 grid place-items-center">
           <svg class="size-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M5 12l4 3 6-6"/></svg>
-        </div>
-        <span class="font-extrabold tracking-tight">FC Aurora</span>
+        </div> -->
+        <span class="font-extrabold tracking-tight">SK Bílovice nad Svitavou</span>
       </NuxtLink>
 
       <!-- Desktop Nav -->
@@ -35,7 +35,7 @@
 
       <!-- Actions (desktop) -->
       <div class="hidden md:flex items-center gap-3">
-        <a href="#tickets" class="btn-primary">Vstupenky</a>
+        <!-- <a href="#tickets" class="btn-primary">Vstupenky</a> -->
         <a href="#sponsors" class="btn-ghost">Partneři</a>
       </div>
 
@@ -87,9 +87,9 @@ import { ref } from 'vue'
 interface Item { label: string; to: string }
 const topItems: Item[] = [
   { label: 'Úvod', to: '/' },
-  { label: 'O nás', to: '/o-nas/historie' },
-  { label: 'Aktuality', to: '/#news' },
-  { label: 'Kontakt', to: '/#contact' }
+  { label: 'Historie', to: '/historie' },
+  // { label: 'Aktuality', to: '/#news' },
+  // { label: 'Kontakt', to: '/#contact' }
 ]
 
 const teamItems: Item[] = [

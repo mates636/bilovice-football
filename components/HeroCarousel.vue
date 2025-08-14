@@ -1,5 +1,5 @@
 <template>
-  <section aria-label="Featured highlights" class="relative">
+  <section aria-label="Featured highlights" class="relative mt-5">
     <div class="section">
       <div
         class="relative overflow-hidden rounded-2xl ring-1 ring-white/10"
@@ -18,29 +18,16 @@
           <div
             v-for="(slide, i) in slides"
             :key="i"
-            class="relative min-w-full aspect-[16/9] sm:aspect-[21/9] bg-neutral-800"
+            class="relative w-full flex-none aspect-[16/9] sm:aspect-[21/9] bg-neutral-800"
           >
             <img
               :src="slide.src"
               :alt="slide.alt"
-              class="absolute inset-0 h-full w-full object-cover scale-105 will-change-transform"
+              class="absolute inset-0 h-full w-full object-cover object-center will-change-transform"
               loading="lazy"
             />
-            <!-- Gradient overlay with vignette -->
-            <div class="absolute inset-0">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/10" aria-hidden="true" />
-              <div class="absolute inset-0 ring-1 ring-inset ring-black/20" aria-hidden="true" />
-            </div>
-            <!-- Content -->
-            <div class="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
-              <p class="kicker text-emerald-300">{{ slide.kicker }}</p>
-              <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight max-w-3xl">{{ slide.title }}</h2>
-              <p class="muted mt-3 max-w-2xl text-base sm:text-lg">{{ slide.subtitle }}</p>
-              <div class="mt-6 flex flex-wrap gap-3">
-                <a :href="slide.ctaHref" class="btn-primary shadow-lg shadow-emerald-500/20">{{ slide.cta }}</a>
-                <a :href="slide.secondaryHref" class="btn-ghost">{{ slide.secondary }}</a>
-              </div>
-            </div>
+
+
           </div>
         </div>
 
@@ -83,50 +70,18 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 interface Slide {
   src: string
   alt: string
-  title: string
-  subtitle: string
-  kicker: string
-  cta: string
-  ctaHref: string
-  secondary: string
-  secondaryHref: string
 }
 
-const slides = ref<Slide[]>([
-  {
-    src: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?q=80&w=2000&auto=format&fit=crop',
-    alt: 'Stadium under lights',
-    title: 'Under the Lights',
-    subtitle: 'Feel the roar of the crowd at our home ground.',
-    kicker: 'Matchday',
-    cta: 'Buy Tickets',
-    ctaHref: '#tickets',
-    secondary: 'Learn More',
-    secondaryHref: '#about'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1486286701208-1d58e9338013?q=80&w=2000&auto=format&fit=crop',
-    alt: 'Team celebration',
-    title: 'Together We Rise',
-    subtitle: 'A decade of passion, skill, and community.',
-    kicker: 'Our Team',
-    cta: 'Meet the Squad',
-    ctaHref: '#team',
-    secondary: 'Club History',
-    secondaryHref: '#history'
-  },
-  {
-    src: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=2000&auto=format&fit=crop',
-    alt: 'Player in action',
-    title: 'Relentless Pursuit',
-    subtitle: 'We play with heart and purpose every minute.',
-    kicker: 'Philosophy',
-    cta: 'Join the Academy',
-    ctaHref: '#academy',
-    secondary: 'Watch Highlights',
-    secondaryHref: '#highlights'
-  }
-])
+// Images served from public/images/carousel
+const carouselImages = [
+  '/images/carousel/0I4A7561.jpg',
+  '/images/carousel/0I4A8756.jpg',
+  '/images/carousel/_MG_7843.jpg'
+]
+
+const slides = ref<Slide[]>(
+  carouselImages.map((src) => ({ src, alt: 'Carousel photo' }))
+)
 
 const currentIndex = ref(0)
 let intervalId: number | undefined
