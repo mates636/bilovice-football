@@ -15,10 +15,10 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'FC Aurora | Official Site',
+      title: 'SK Bílovice nad Svitavou',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'description', content: 'Official website for FC Aurora: news, results, and sponsors.' }
+        { name: 'description', content: 'SK Bílovice nad Svitavou' }
       ]
     }
   },
