@@ -73,7 +73,7 @@
           </NuxtLink>
         </div>
         <div class="flex gap-3 pt-2">
-          <a href="#tickets" class="btn-primary flex-1 justify-center">Vstupenky</a>
+          <!-- <a href="#tickets" class="btn-primary flex-1 justify-center">Vstupenky</a> -->
           <a href="#sponsors" class="btn-ghost flex-1 justify-center">Partneři</a>
         </div>
       </nav>
