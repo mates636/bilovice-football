@@ -1,16 +1,16 @@
 <template>
   <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60 ring-1 ring-white/10">
-    <div class="section h-16 flex items-center justify-between">
+    <div class="section h-20 flex items-center justify-between">
       <!-- Brand -->
       <NuxtLink to="/" class="flex items-center gap-3">
-        <!-- <div class="size-9 rounded-lg bg-emerald-500/20 ring-1 ring-emerald-400/30 grid place-items-center">
-          <svg class="size-5 text-emerald-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M5 12l4 3 6-6"/></svg>
-        </div> -->
-        <span class="font-extrabold tracking-tight">SK Bílovice nad Svitavou</span>
+        <div class="size-15 rounded-lg grid place-items-center">
+          <img class="size-11" src="/images/Znak_obce_Bilovice_nad_Svitavou.svg" alt="Znak obce Bílovice nad Svitavou" />
+        </div>
+        <h2 class="font-extrabold tracking-tight ">SK Bílovice nad Svitavou</h2>
       </NuxtLink>
 
       <!-- Desktop Nav -->
-      <nav aria-label="Hlavní menu" class="hidden md:flex items-center gap-6 text-sm">
+      <nav aria-label="Hlavní menu" class="hidden md:flex items-center gap-6 text-lg">
         <NuxtLink v-for="item in topItems" :key="item.to" :to="item.to" class="text-neutral-300 hover:text-white transition-colors">
           {{ item.label }}
         </NuxtLink>
@@ -34,7 +34,7 @@
       </nav>
 
       <!-- Actions (desktop) -->
-      <div class="hidden md:flex items-center gap-3">
+      <div class="hidden md:flex items-center gap-3 text-lg">
         <!-- <a href="#tickets" class="btn-primary">Vstupenky</a> -->
         <a href="#sponsors" class="btn-ghost">Partneři</a>
       </div>
@@ -88,8 +88,6 @@ interface Item { label: string; to: string }
 const topItems: Item[] = [
   { label: 'Úvod', to: '/' },
   { label: 'Historie', to: '/historie' },
-  // { label: 'Aktuality', to: '/#news' },
-  // { label: 'Kontakt', to: '/#contact' }
 ]
 
 const teamItems: Item[] = [
@@ -101,7 +99,6 @@ const teamItems: Item[] = [
 const open = ref(false)
 const teamsOpen = ref(false)
 
-// Close teams menu on outside click or Escape
 const teamsMenu = ref<HTMLElement | null>(null)
 if (import.meta.client) {
   window.addEventListener('click', (e) => {

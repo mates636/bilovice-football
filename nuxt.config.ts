@@ -19,6 +19,9 @@ export default defineNuxtConfig({
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'SK Bílovice nad Svitavou' }
+      ],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/images/Znak_obce_Bilovice_nad_Svitavou.svg' }
       ]
     }
   },
