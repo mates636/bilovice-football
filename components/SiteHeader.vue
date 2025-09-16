@@ -4,7 +4,7 @@
       <!-- Brand -->
       <NuxtLink to="/" class="flex items-center gap-3">
         <div class="size-15 rounded-lg grid place-items-center">
-          <img class="size-11" src="/images/Znak_obce_Bilovice_nad_Svitavou.svg" alt="Znak obce Bílovice nad Svitavou" />
+          <img class="size-11" src="/images/Znak_obce_Bilovice_nad_Svitavou.png" alt="Znak obce Bílovice nad Svitavou" />
         </div>
         <h2 class="font-extrabold tracking-tight ">SK Bílovice nad Svitavou</h2>
       </NuxtLink>
