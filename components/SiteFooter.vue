@@ -30,9 +30,9 @@
         <ul class="mt-3 space-y-2 text-sm text-neutral-300">
           <li><NuxtLink to="/" class="hover:text-white">Úvod</NuxtLink></li>
           <li><NuxtLink to="/historie" class="hover:text-white">Historie</NuxtLink></li>
-          <li><a href="#news" class="hover:text-white">Aktuality</a></li>
-          <li><a href="#team" class="hover:text-white">Tým</a></li>
-          <li><a href="#contact" class="hover:text-white">Kontakt</a></li>
+          <!-- <li><a href="#news" class="hover:text-white">Aktuality</a></li> -->
+          <!-- <li><a href="#team" class="hover:text-white">Tým</a></li> -->
+          <!-- <li><a href="#contact" class="hover:text-white">Kontakt</a></li> -->
         </ul>
       </div>
 

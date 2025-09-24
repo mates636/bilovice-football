@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { name: 'description', content: 'SK Bílovice nad Svitavou' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/images/Znak_obce_Bilovice_nad_Svitavou.png' }
+        { rel: 'icon', type: 'image/x-icon', href: '/images/znak_icon2.png' }
       ]
     }
   },

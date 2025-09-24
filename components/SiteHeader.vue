@@ -3,8 +3,8 @@
     <div class="section h-20 flex items-center justify-between">
       <!-- Brand -->
       <NuxtLink to="/" class="flex items-center gap-3">
-        <div class="size-15 rounded-lg grid place-items-center">
-          <img class="size-11" src="/images/Znak_obce_Bilovice_nad_Svitavou.png" alt="Znak obce Bílovice nad Svitavou" />
+        <div class="size-20 rounded-lg grid place-items-center">
+          <img class="size-20" src="/images/Znak_obce_Bilovice_nad_Svitavou.png" alt="Znak obce Bílovice nad Svitavou" />
         </div>
         <h2 class="font-extrabold tracking-tight ">SK Bílovice nad Svitavou</h2>
       </NuxtLink>
@@ -15,7 +15,7 @@
           {{ item.label }}
         </NuxtLink>
         <!-- Týmy dropdown (click to toggle, stays open until click outside/Escape) -->
-        <div class="relative" ref="teamsMenu">
+        <!-- <div class="relative" ref="teamsMenu">
           <button
             class="inline-flex items-center gap-1 text-neutral-300 hover:text-white transition-colors"
             @click.stop="teamsOpen = !teamsOpen"
@@ -30,13 +30,14 @@
               {{ t.label }}
             </NuxtLink>
           </div>
-        </div>
+        </div> -->
       </nav>
 
       <!-- Actions (desktop) -->
       <div class="hidden md:flex items-center gap-3 text-lg">
-        <!-- <a href="#tickets" class="btn-primary">Vstupenky</a> -->
         <a href="#sponsors" class="btn-ghost">Partneři</a>
+        <a href="#sponsoring" class="btn-ghost">Sponzoring</a>
+
       </div>
 
       <!-- Mobile menu button -->
@@ -58,7 +59,7 @@
           {{ item.label }}
         </NuxtLink>
         <!-- Mobile: Týmy toggle -->
-        <button
+        <!-- <button
           class="rounded-lg px-3 py-2 text-left text-neutral-200 hover:bg-white/5 inline-flex items-center justify-between"
           @click="teamsOpen = !teamsOpen"
           :aria-expanded="teamsOpen ? 'true' : 'false'"
@@ -71,10 +72,11 @@
           <NuxtLink v-for="t in teamItems" :key="t.to + '-m'" :to="t.to" class="block rounded-lg px-3 py-2 text-neutral-200 hover:bg-white/5" @click="open = false; teamsOpen = false">
             {{ t.label }}
           </NuxtLink>
-        </div>
+        </div> -->
         <div class="flex gap-3 pt-2">
-          <!-- <a href="#tickets" class="btn-primary flex-1 justify-center">Vstupenky</a> -->
           <a href="#sponsors" class="btn-ghost flex-1 justify-center">Partneři</a>
+          <a href="#sponsoring" class="btn-ghost flex-1 justify-center">Sponzoring</a>
+
         </div>
       </nav>
     </div>

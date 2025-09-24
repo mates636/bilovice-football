@@ -15,20 +15,22 @@
           class="relative flex transition-transform duration-500 ease-out"
           :style="{ transform: `translateX(-${currentIndex * 100}%)` }"
         >
-          <div
-            v-for="(slide, i) in slides"
-            :key="i"
-            class="relative w-full flex-none aspect-[16/9] sm:aspect-[21/9] bg-neutral-800"
-          >
-            <img
-              :src="slide.src"
-              :alt="slide.alt"
-              class="absolute inset-0 h-full w-full object-cover object-center will-change-transform"
-              loading="lazy"
-            />
+         <div
+          v-for="(slide, i) in slides"
+          :key="i"
+          class="relative w-full flex-none aspect-[16/9] sm:aspect-[21/9] bg-neutral-800"
+        >
+          <img
+            :src="slide.src"
+            :alt="slide.alt"
+            class="absolute inset-0 h-full w-full object-cover object-center will-change-transform"
+            loading="lazy"
+            decoding="async"
+            fetchpriority="low"
+            width="1920" height="864"
+          />
+        </div>
 
-
-          </div>
         </div>
 
         <!-- Controls -->
